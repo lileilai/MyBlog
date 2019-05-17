@@ -30,3 +30,16 @@ git add (一定要有新内容)
 切换到主分支  git checkout master
 将新分支的提交的改动合并到主分支上  git merge newbranch
 然后就能push代码了
+
+
+git reset HEAD <文件名> 是撤销  git add 的文件，取消暂存状态
+
+未暂存的修改文件进行回滚的操作命令： git checkout -- <文件名>
+
+git fetch --all
+git reset --hard origin/master
+
+如何回滚文件:
+
+1、修改完了还没有git add  使用git checkout
+2、commit 了还没有push  使用git reset --
