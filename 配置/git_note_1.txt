@@ -42,4 +42,7 @@ git reset --hard origin/master
 如何回滚文件:
 
 1、修改完了还没有git add  使用git checkout
-2、commit 了还没有push  使用git reset --
+2、git add 了
+首先 git reset HEAD 先用head覆盖暂存区的内容，然后git checkout . 暂存区覆盖工作区的内容
+
+3、commit 了还没有push  使用git reset --hard origin/master覆盖 本地仓库 暂存区 工作区
