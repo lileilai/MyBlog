@@ -46,3 +46,15 @@ git reset --hard origin/master
 首先 git reset HEAD 先用head覆盖暂存区的内容，然后git checkout . 暂存区覆盖工作区的内容
 
 3、commit 了还没有push  使用git reset --hard origin/master覆盖 本地仓库 暂存区 工作区
+
+
+
+~
+error: Your local changes to 'c/environ.c' would be overwritten by merge.  Aborting.
+Please, commit your changes or stash them before you can merge.
+这里学习到命令git stash
+
+1、git stash  这样本地的修改就被存储起来了
+2、暂存本地的修改后  就可以pull了  git pull
+3、git stash pop stash@{0} 还原暂存的内容
+4、手动合并
